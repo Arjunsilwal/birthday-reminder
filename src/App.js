@@ -7,9 +7,9 @@ function App() {
 	return (
 		<main>
 			<section className="container">
-				<h3>5 people have birthdays today</h3>
+				<h3>{birthday.length} people have birthdays today</h3>
 				<List people={birthday} />
-				<button onClick={() => console.log("you clicked me")}>Clear All</button>
+				<button onClick={() => setBirthday([])}>Clear All</button>
 			</section>
 		</main>
 	);
